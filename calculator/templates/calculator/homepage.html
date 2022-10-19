@@ -1,0 +1,45 @@
+{% extends 'calculator/base.html' %}
+{% block content %}
+{% load static %}
+{% include 'calculator/navigation.html' %}
+
+<br>
+
+<div class="col">
+	<div class="card card-body">
+		<h1 style="text-align: center;">Welcome to the Residential Energy Evaluator!</h1>
+        <hr>
+        <h3 style="text-align: center;">Here you can:</h1>
+        <ul style="margin: auto;">
+            <li><h5>Save money by reducing your electricity bill</h5></li>
+            <li><h5>Receive detailed energy insights and benchmarking against similar properties</h5></li>
+            <li><h5>Access vast digital repository of net - zero data & resources</h5></li>
+            <li><h5>Establish Digital Footprint of your building</h5></li>
+            <li><h5>Explore live monitoring and automation via IoT</h5></li>
+        </ul> 
+	</div>
+</div>
+<br>
+<div class="row" style="margin: auto;">
+	<div class="col-md-5">
+		<div class="card card-body">
+			<img src="{% static '/images/ishraelogo.jpeg' %} " style="object-fit: contain;"> 
+		</div>
+	</div>
+	<div class="col-md-7">
+		<div class="card card-body">
+            <h3 style="text-align: center">Connect with the Team!</h3>
+            <hr>
+            <ul style="margin: auto;">
+                <li><h5><a href="https://www.facebook.com/Team-NIVAS-20-105570155330500/">Team NIVAS 2.0 Facebook Page</a></h5></li>
+                <li><h5><a href="https://www.linkedin.com/company/team-nivas-2-0/">Team NIVAS 2.0 LinkedIn Page</a></h5></li>
+                <li><h5><a href="https://www.linkedin.com/in/kausarde/">Portal Developer</a></h5></li>
+            </ul> 
+		</div>
+	</div>
+</div>
+
+<br>
+
+
+{% endblock %}
